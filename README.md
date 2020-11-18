@@ -1,2 +1,4 @@
 # LoginPage
-Login and Register Page Project Sample using TabbedView and MasterDetailView
+Login and Register Page Project Sample using the following views:
+- TabbedView
+- MasterDetailView
