@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginPageXam.IndexPage" BackgroundColor="White">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu" BackgroundColor="DarkRed">
+            <StackLayout Margin="20, 50, 10, 20" Padding="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Label TextColor="White" Text="Hola 1" FontSize="Large"/>
+                <Label TextColor="White" Text="Hola 2" FontSize="Large"/>
+                <Label TextColor="White" Text="Hola 3" FontSize="Large"/>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <ContentPage BackgroundColor="White" Title="Menu">
+                    <StackLayout Padding="10" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                        <Label x:Name="textLabel" TextColor="Black" Text="Hey, welcome" FontSize="Title"/>
+                        <Button TextColor="White" Text="Sign out" BackgroundColor="DarkRed" Clicked="ButtonClicked"/>
+                    </StackLayout>
+                </ContentPage>
+            </x:Arguments>
+        </NavigationPage>
+        
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
