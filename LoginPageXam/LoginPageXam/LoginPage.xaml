@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginPageXam.LoginPage">
+  <!--Pages can be added as references or inline-->
+    <ContentPage BackgroundColor="White" Title="Login">
+        
+        <Grid  Padding="10" Margin="10" HorizontalOptions="FillAndExpand" VerticalOptions="Center" >
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="logoIntec"
+                   HorizontalOptions="Center" Aspect="AspectFit"
+                   Grid.Row="0" Grid.Column="0"
+                   WidthRequest="200" HeightRequest="200"/>
+
+            <Entry x:Name="username" TextColor="Black" Placeholder="Username" PlaceholderColor="DarkGray" Grid.Row="1" Grid.Column="0" />
+            <Entry x:Name="password" TextColor="Black" Placeholder="Password" PlaceholderColor="DarkGray" IsPassword="True" Grid.Row="2" Grid.Column="0" />
+            <Entry x:Name="confirmPassword" TextColor="Black" Placeholder="Confirm Password" PlaceholderColor="DarkGray" IsPassword="True" Grid.Row="3" Grid.Column="0" />
+            <Button BackgroundColor="DarkRed" Text="Sign in" Grid.Row="4" Grid.Column="0" Clicked="SignInUpButtonClicked"/>
+        </Grid>
+
+    </ContentPage>
+
+    <ContentPage BackgroundColor="White" Title="Register">
+
+        <Grid  Padding="10" Margin="10" HorizontalOptions="FillAndExpand" VerticalOptions="Center" >
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="logoIntec"
+                   HorizontalOptions="Center" Aspect="AspectFit"
+                   Grid.Row="0" Grid.Column="0"
+                   WidthRequest="200" HeightRequest="200"/>
+
+            <Entry TextColor="Black" Placeholder="Insert your name" PlaceholderColor="DarkGray" Grid.Row="1" Grid.Column="0" />
+            <Entry TextColor="Black" Placeholder="Insert your email account" PlaceholderColor="DarkGray" Grid.Row="2" Grid.Column="0" />
+            <Entry TextColor="Black" Placeholder="Insert your username" PlaceholderColor="DarkGray" Grid.Row="3" Grid.Column="0" />
+            <Entry TextColor="Black" Placeholder="Insert password" PlaceholderColor="DarkGray" IsPassword="True" Grid.Row="4" Grid.Column="0" />
+            <Entry TextColor="Black" Placeholder="Confirm Password" PlaceholderColor="DarkGray" IsPassword="True" Grid.Row="5" Grid.Column="0" />
+            <Button BackgroundColor="DarkRed" Text="Sign up" Grid.Row="6" Grid.Column="0" Clicked="SignInUpButtonClicked" />
+        </Grid>
+
+    </ContentPage>
+
+</TabbedPage>
