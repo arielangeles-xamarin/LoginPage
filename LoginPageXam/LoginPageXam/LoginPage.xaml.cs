@@ -17,9 +17,9 @@ namespace LoginPageXam
             InitializeComponent();
         }
 
-        async private void SignInButtonClicked(object sender, EventArgs e)
+        async private void SignInUpButtonClicked(object sender, EventArgs e)
         {
-            if (password.Text == confirmPassword.Text || !string.IsNullOrEmpty(username.Text))
+            if (password.Text == confirmPassword.Text && !string.IsNullOrEmpty(username.Text))
             {
                 await Navigation.PushModalAsync(new IndexPage(username.Text));
             }
